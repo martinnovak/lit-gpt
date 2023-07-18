@@ -26,6 +26,12 @@ To ensure everything works as expected.
 
 # Run the HTTP endpoint application:
 
+It runs under user `mn` on gpu-1 server. At first, you should write:
+
+`conda activate lit`
+
+To run the server itself.
+
 `uvicorn app:app --host 0.0.0.0`
 
 or run
