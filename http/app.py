@@ -29,6 +29,7 @@ generator.setup(
 async def execute_query(query: str) -> list[str]:
     curr_thread = threading.current_thread()
     print(f"Running on thread: {curr_thread.ident}/{curr_thread.name} PID: {os.getpid()}")
+    print(f'Query: {query}')
 
     async with lock:
         t1 = time.time()
